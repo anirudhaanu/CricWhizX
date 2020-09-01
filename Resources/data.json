@@ -1,0 +1,173 @@
+{
+    "players": [
+      {
+        "id": "1",
+        "name": "Tamim Iqbal",
+        "role": "batsman",
+        "credit": 10,
+        "team": "a"
+      },
+      {
+        "id": "2",
+        "name": "Mashrafee Murtoza",
+        "role": "bowler",
+        "credit": 9,
+        "team": "b"
+      },
+      {
+        "id": "3",
+        "name": "Mushfique",
+        "role": "batsman",
+        "credit": 9,
+        "team": "a"
+      },
+      {
+        "id": "4",
+        "name": "Alamin Hossain",
+        "role": "bowler",
+        "credit": 11,
+        "team": "a"
+      },
+      {
+        "id": "5",
+        "name": "Tamim Iqbal",
+        "role": "batsman",
+        "credit": 10,
+        "team": "a"
+      },
+      {
+        "id": "6",
+        "name": "Mashrafee Murtoza",
+        "role": "bowler",
+        "credit": 9,
+        "team": "b"
+      },
+      {
+        "id": "7",
+        "name": "Mushfique",
+        "role": "batsman",
+        "credit": 9,
+        "team": "a"
+      },
+      {
+        "id": "8",
+        "name": "Alamin Hossain",
+        "role": "bowler",
+        "credit": 11,
+        "team": "a"
+      },
+      {
+        "id": "9",
+        "name": "Tamim Iqbal",
+        "role": "batsman",
+        "credit": 10,
+        "team": "a"
+      },
+      {
+        "id": "10",
+        "name": "Mashrafee Murtoza",
+        "role": "bowler",
+        "credit": 9,
+        "team": "b"
+      },
+      {
+        "id": "11",
+        "name": "Mushfique",
+        "role": "batsman",
+        "credit": 9,
+        "team": "a"
+      },
+      {
+        "id": "12",
+        "name": "Alamin Hossain",
+        "role": "bowler",
+        "credit": 11,
+        "team": "a"
+      },
+      {
+        "id": "13",
+        "name": "Tamim Iqbal",
+        "role": "batsman",
+        "credit": 10,
+        "team": "a"
+      },
+      {
+        "id": "14",
+        "name": "Mashrafee Murtoza",
+        "role": "bowler",
+        "credit": 9,
+        "team": "b"
+      },
+      {
+        "id": "15",
+        "name": "Mushfique",
+        "role": "batsman",
+        "credit": 9,
+        "team": "a"
+      },
+      {
+        "id": "16",
+        "name": "Alamin Hossain",
+        "role": "bowler",
+        "credit": 11,
+        "team": "a"
+      },
+      {
+        "id": "17",
+        "name": "Tamim Iqbal",
+        "role": "batsman",
+        "credit": 10,
+        "team": "a"
+      },
+      {
+        "id": "18",
+        "name": "Mashrafee Murtoza",
+        "role": "bowler",
+        "credit": 9,
+        "team": "b"
+      },
+      {
+        "id": "19",
+        "name": "Mushfique",
+        "role": "batsman",
+        "credit": 9,
+        "team": "a"
+      },
+      {
+        "id": "20",
+        "name": "Alamin Hossain",
+        "role": "bowler",
+        "credit": 11,
+        "team": "a"
+      },
+      {
+        "id": "21",
+        "name": "Tamim Iqbal",
+        "role": "batsman",
+        "credit": 10,
+        "team": "a"
+      },
+      {
+        "id": "22",
+        "name": "Mashrafee Murtoza",
+        "role": "bowler",
+        "credit": 9,
+        "team": "b"
+      },
+      {
+        "id": "23",
+        "name": "Mushfique",
+        "role": "batsman",
+        "credit": 9,
+        "team": "a"
+      },
+      {
+        "id": "24",
+        "name": "Alamin Hossain",
+        "role": "bowler",
+        "credit": 11,
+        "team": "a"
+      }
+    ]
+}
+   
