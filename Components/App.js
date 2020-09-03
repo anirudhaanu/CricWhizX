@@ -1,30 +1,24 @@
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {View,StatusBar} from 'react-native';
 
-import TeamSelector from './TeamSelectorClass'
+import TeamSelector from './TeamSelector'
 import * as data from '../Resources/data.json'
-import { NavigationContainer } from '@react-navigation/native';
+
 
 function App() {
   return (
-    <NavigationContainer>
+    <View style={{display:"flex",flex:1}}>
       <StatusBar barStyle="default"/>
       <TeamSelector data={data.players}
                     onSubmit={(players) => { 
                       console.log(players)
                     }} 
+                  
                   />
                   
       
-    </NavigationContainer>
+    </View>
   );
 };
 

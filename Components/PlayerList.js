@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import {
   StyleSheet, View,  Text,FlatList,TouchableOpacity,ToastAndroid
 } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+
 
 const ListHeaderComponent=(props)=>{return(
 <View style={styles.listHeaderComponent}>
@@ -22,33 +22,39 @@ const showToast = (type) => {
 
 
 export default function PlayerList(props){
+    //console.log(props);
     const callBackToTab=props.callBack;
+    const setTitleToTab=props.setTitle;
+    //const setTitle=props[0];
+
     var [data,setData]=useState([]);
     var [quantity,setQuantity]=useState(0);
     var [refresh,setRefreshFlag]=useState(true)
-    const navigation=useNavigation();
+   // const navigation=useNavigation();
     
     useEffect(()=>{
         var temp=props.data;
         temp.map((item)=>item.selected=false)
+        //console.log(temp)
         setData(temp);    
     },[props.data])
     
-    const changeTabTitle=(quantityTemp)=>{
-        var tabBarTitle=props.data[0].role+"("+quantityTemp+")"
-        navigation.setOptions({ title:tabBarTitle })
+    const changeTabTitleNumber=(quantityTemp)=>{
+        setTitleToTab(props.index,quantityTemp)
     }
     
-    const callBackHandler=(changer)=>{
+    const callBackHandler=()=>{
         var selectedPlayersArray=[]
-        temp=data;
+        var temp=data;
         temp.map(item=>{
             if(item.selected){
                 selectedPlayersArray.push(item)
             }
         })
-        callBackToTab(changer,selectedPlayersArray,data[0].role);
+        callBackToTab(selectedPlayersArray);
     }
+
+
 
     const onPressPlayer=(index)=>{
         
@@ -63,17 +69,18 @@ export default function PlayerList(props){
         temp[index].selected=!temp[index].selected;
         if(temp[index].selected) {
             quantityTemp=quantityTemp+1;
-            callBackHandler(1)
+            
         }
         else {
              quantityTemp=quantityTemp-1;
-             callBackHandler(-1)    
+                 
         }
-            
+        callBackHandler();
         setData(temp);
         setRefreshFlag(!refresh);
         setQuantity(quantityTemp);
-        changeTabTitle(quantityTemp)
+        changeTabTitleNumber(quantityTemp);
+        
 
     }
 
@@ -110,10 +117,11 @@ export default function PlayerList(props){
 
 const styles=StyleSheet.create({
     container:{
-        backgroundColor:"transparent",
+        backgroundColor:"#1c1036",
         display:"flex",
         flex:1,
-        marginTop:0
+        marginTop:0,
+        width:"100%"
     },
 
     Item:{
